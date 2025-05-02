@@ -63,7 +63,7 @@ The architecture of this application is designed to be highly scalable, using th
     name VARCHAR(100),
     email VARCHAR(100),
     password VARCHAR(100)
-);
+   );
    
 3. Insert some sample data:
 
