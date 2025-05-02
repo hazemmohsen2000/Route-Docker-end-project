@@ -72,7 +72,11 @@ The architecture of this application is designed to be highly scalable, using th
    VALUES
    (1, 'John Doe', 'john.doe@example.com', 'password123'),
    (2, 'Jane Smith', 'jane.smith@example.com', 'password456');
-   
+
+## Docker Image Optimization
+
+The Docker image size was reduced from **111 MB** to **77 MB** by applying a multi-stage build and removing unnecessary files and build dependencies.  
+This results in a leaner and more secure production image, improving deployment speed and resource efficiency.
 
 ## Security Scans
 
