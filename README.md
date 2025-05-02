@@ -52,8 +52,8 @@ The architecture of this application is designed to be highly scalable, using th
 1. Run the following command to access the PostgreSQL container:
 
    ```bash
-   git clone https://github.com/yourusername/route-docker-end-project.git
-   cd route-docker-end-project
+   sudo docker exec -it postgres_db psql -U postgres
+
    
 2. Create the users table:
 
