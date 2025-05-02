@@ -1,8 +1,10 @@
-version: '3.9'
+version: '3.8'
 
 services:
-  web:
-    build: .
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: fastapi_app
     ports:
       - "8000:8000"
@@ -14,17 +16,17 @@ services:
       - REDIS_URL=redis://redis:6379/0
 
   db:
-    image: postgres:15-alpine
+    image: postgres:alpine
     container_name: postgres_db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
 
   redis:
     image: redis:alpine
     container_name: redis_cache
-
-volumes:
-  postgres_data:
+    ports:
+      - "6379:6379"
