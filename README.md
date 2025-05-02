@@ -98,13 +98,13 @@ Here are some screenshots of the app running:
 
 #### Home Page
 
-![API Response](./screenshots/run1.png)
+![API Response](./screenshots/run1.PNG)
 
 #### Redis Cache Example
 
-![Redis Cache](./screenshots/run2.png)
+![Redis Cache Example](./screenshots/run2.PNG)
 
 #### Database Cache Example
 
-![NGINX Reverse Proxy](./screenshots/run3.png)
+![Database Cache Example](./screenshots/run3.PNG)
 
